@@ -1,0 +1,24 @@
+@baseUrl = http://localhost:4000
+
+### Get all jokes
+GET {{baseUrl}}
+
+### Add new joke
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "joke": "ทดสอบมุกตลก"
+}
+
+### Get joke by id
+GET {{baseUrl}}/61c8300b81fdcd67b8cfb0ca
+
+### Delete joke
+DELETE {{baseUrl}}/:id
+
+### Like a joke
+POST {{baseUrl}}/61c8300b81fdcd67b8cfb0ca/like
+
+### Dislike a joke
+POST {{baseUrl}}/61c8300b81fdcd67b8cfb0ca/dislike
